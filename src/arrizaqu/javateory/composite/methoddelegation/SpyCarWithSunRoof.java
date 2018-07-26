@@ -1,10 +1,11 @@
 package arrizaqu.javateory.composite.methoddelegation;
 
-public class SpyCarWithSunRoof {
+public class SpyCarWithSunRoof implements Car {
 
 	private BasicCar car = new BasicCar();
 	private SpyCarAddon spyCarAddon = new SpyCarAddon();
 	private SunRoofAddon rootAddon = new SunRoofAddon();
+	
 	public void start() {
 		car.start();
 	}
@@ -17,6 +18,7 @@ public class SpyCarWithSunRoof {
 	public void closeSunRoof() {
 		rootAddon.closeSunRoof();
 	}
+	
 	
 	
 }

@@ -1,6 +1,11 @@
 package arrizaqu.javateory.composite.methoddelegation;
 
-public class BasicCar {
+public class BasicCar implements Car  {
 
-	public void start() {};
+	@Override
+	public void start() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
